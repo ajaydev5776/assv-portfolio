@@ -7,24 +7,6 @@
 .hero-section {
   & .inner_container {
     & .content_side {
-      & .inner {
-        transform: rotate(90deg);
-        color: rgba(0, 0, 0, 0.8);
-        letter-spacing: 1rem;
-        transform-origin: left top 0;
-        font-family: Arial, sans-serif;
-        left: 16px;
-        top: 24px;
-        &::after {
-          content: "";
-          position: absolute;
-          top: 8px;
-          right: -40px;
-          background: #000;
-          width: 40px;
-          height: 1px;
-        }
-      }
       & .main_content {
         font-family: Arial, sans-serif !important;
         line-height: 1.8;
@@ -42,6 +24,25 @@
   }
 }
 
+.inner {
+  transform: rotate(90deg);
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 1rem;
+  transform-origin: left top 0;
+  font-family: Arial, sans-serif;
+  left: 16px;
+  top: 24px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -40px;
+    background: #000;
+    width: 40px;
+    height: 1px;
+  }
+}
+
 .services_heading {
   & .inner_container {
     & .swiper {
@@ -50,6 +51,7 @@
     & .content_side {
       & .main_content {
         & .card {
+          font-family: Arial, Helvetica, sans-serif !important;
           position: relative;
           cursor: pointer;
           transition: all 0.4s;
@@ -76,6 +78,42 @@
           }
           &:hover {
             box-shadow: 1px 9px 24px rgba(152, 152, 152, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+
+.portfolio_section {
+  & .inner_container {
+    & .content_side {
+      & .portfolio_card {
+        & .card {
+          overflow: hidden;
+          font-family: Arial, Helvetica, sans-serif !important;
+          & .card-body {
+            & img {
+              transition: all .4s;
+
+            }
+            transition: all .4s;
+            & .inner_item {
+              transform: scale(0);
+              transition:  all .4s;
+              background-color: rgba($theme2, 0.5);
+              & a {
+                letter-spacing: .5;
+              }
+            }
+            &:hover{
+              & img {
+                transform: scale(1.3);
+              }
+              & .inner_item {
+              transform: scale(1);
+              }
+            }
           }
         }
       }
