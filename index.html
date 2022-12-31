@@ -1,0 +1,112 @@
+<div include-html="layout/header.html" id="header_file"></div>
+<div include-html="layout/header-links.html" id="header_file_link"></div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="container-fluid hero-section my-5 pt-5">
+        <div class="container inner_container h-100 position-relative">
+            <div class="row h-100 align-items-center">
+                <!-- <div class="col-12 top_heading fw-bold text-center">About</div> -->
+                <div class="col-12 px-0 row mx-0 justify-content-lg-between">
+                    <div class="col-lg-4">
+                        <div class="swiper user_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/about-2.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/about.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/about-2.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/about.jpg" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="swiper user_slider1 h-150px">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h2 class="fs-60"><span>I'm</span><br><span>A Designer</span></h2>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2 class="fs-60"><span>Noah</span><br><span>Henderson</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_side">
+                            <h6 class="inner position-relative d-inline-block">ABOUT</h6>
+                            <div class="main_content text-gray fs-16 fw-bold ps-5">
+                                A small river named Duden <a href="#">flows by their place</a> and supplies it with the
+                                necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
+                                fly
+                                into your mouth. Even the all-powerful Pointing has no control about the blind texts it
+                                is
+                                an almost unorthographic life.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<div include-html="layout/footer.html" id="footer_file"></div>
+<div include-html="layout/footer-links.html" id="footer_file_link"></div>
+<script src="assets/libs/include/jquery-3.6.0.min.js"></script>
+<script src="assets/libs/include/include-html.min.js"></script>
+<script src="assets/libs/swiper-slider/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".user_slider", {
+        grabCursor: true,
+        effect: "creative",
+        mousewheel: true,
+        loop: true,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
+    });
+    var swiper = new Swiper(".user_slider1", {
+        // grabCursor: true,
+        // effect: "creative",
+        mousewheel: true,
+        loop: true,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
+    });
+</script>

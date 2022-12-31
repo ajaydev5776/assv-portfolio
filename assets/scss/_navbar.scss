@@ -1,0 +1,17 @@
+.offcanvas {
+    & .offcanvas-header {
+        & .offcanvas-title {
+            letter-spacing: .1rem;
+        }
+        & ul {
+            & li {
+                transition: all .3s;
+                &:hover{
+                    & a {
+                        letter-spacing: .5rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
