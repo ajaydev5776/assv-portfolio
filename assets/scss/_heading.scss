@@ -1,0 +1,34 @@
+@media (min-width: 991.98px) {
+    .top_main_heading {
+        & .inner_container {
+            &::before{
+                font-size: 250px !important;
+            }
+            }
+        }
+}
+@media (min-width: 767.98px) {
+        .top_main_heading {
+            height: calc(100vh - 50px);
+            & .inner_container {
+            position: relative; 
+                &::before{
+                    content: "About";
+                    color: #f0f0f0;
+                    font-size: 200px;
+                    font-weight: 700;
+                    position: absolute;
+                    top: 50px;
+                    left: 50%;
+                    transform: translate(-50% , -50%);
+                }
+            }
+            &.services_heading {
+                & .inner_container {
+                    &::before{
+                        content: "Services";
+                    }
+                }
+            }
+    }
+}

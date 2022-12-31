@@ -75,6 +75,49 @@ $(document).ready(function () {
 });
 
 
+// preloder
+
+let loading = document.getElementById("prelodaer");
+function myfunction(){
+    loading.style.display = "none";
+}
 
 
 
+
+var swiper = new Swiper(".user_slider", {
+    grabCursor: true,
+    effect: "creative",
+    mousewheel: true,
+    loop: true,
+    creativeEffect: {
+        prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+        },
+        next: {
+            translate: ["100%", 0, 0],
+        },
+    },
+});
+var swiper = new Swiper(".user_slider1", {
+    // grabCursor: true,
+    // effect: "creative",
+    mousewheel: true,
+    loop: true,
+    creativeEffect: {
+        prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+        },
+        next: {
+            translate: ["100%", 0, 0],
+        },
+    },
+});
+
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+})

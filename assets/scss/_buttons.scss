@@ -1,0 +1,108 @@
+.download_btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out 0s;
+    padding: 0 30px;
+    border: 2px solid #fff;
+    position: relative;
+    align-items: center;
+    display: inline-flex;
+    height: 46px;
+    background-image: -webkit-linear-gradient(-51deg, $theme1, $theme1 99%);
+    background-color: $theme1;
+    border-color: $theme1;
+    transition: all .4s;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 10px;
+        width: 2px;
+        width: 10px;
+        height: 2px;
+        transition: all .4s;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 10px;
+        width: 2px;
+        transition: all .4s;
+    }
+    &.main_btn {
+        transition: all .4s;
+        &::before {
+            background-color: #fff;
+            background-image: none;
+            transition: all .4s;
+        }
+        &::after {
+            background-color: #fff;
+            background-image: none;
+            transition: all .4s;
+        }
+    }
+    &:hover{
+        background: #fff;
+        color: $theme1;
+        border-color: $theme1;
+        &.main_btn {
+            &::after{
+                background-color: $theme2;
+                background-image: -webkit-linear-gradient(-51deg,$theme1,$theme1 99%);
+            }
+            &::before{
+                background-color: $theme2;
+                background-image: -webkit-linear-gradient(-51deg,$theme1,$theme1 99%);
+            }
+        }
+    }
+}
+
+.more_btn {
+    background-image: none !important;
+    background: #fff !important;
+    transition: all .4s;
+    &.main_btn {
+        transition: all .4s;
+        &::after{
+            background-color: $theme2 !important;
+            background-image: -webkit-linear-gradient(-51deg,$theme1,$theme1 99%) !important;
+        }
+        &::before{
+            background-color: $theme2 !important;
+            background-image: -webkit-linear-gradient(-51deg,$theme1,$theme1 99%) !important;
+        }
+    }
+    &:hover{
+        color: #fff !important;
+        background-image: -webkit-linear-gradient(-51deg, $theme1, $theme1 99%) !important;
+
+        &.main_btn {
+            &::before {
+                background-color: #fff !important;
+                background-image: none !important;
+            }
+            &::after {
+                background-color: #fff !important;
+                background-image: none !important;
+            }
+        }
+    }
+}
+
+
+
+.android_btn {
+    border-radius: 8px;
+    background-color: $black;
+    transition: .4s;
+    &:hover {
+    background-color: rgba($black, 0.9);
+    }
+}

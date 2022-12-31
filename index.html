@@ -1,3 +1,4 @@
+<!-- <div id="prelodaer"></div> -->
 <div include-html="layout/header.html" id="header_file"></div>
 <div include-html="layout/header-links.html" id="header_file_link"></div>
 
@@ -9,17 +10,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Ajay | Portfolio</title>
 </head>
 
-<body>
+<body onload="myfunction()">
     <!-- Hero Section -->
-    <div class="container-fluid hero-section my-5 pt-5">
-        <div class="container inner_container h-100 position-relative">
-            <div class="row h-100 align-items-center">
-                <!-- <div class="col-12 top_heading fw-bold text-center">About</div> -->
-                <div class="col-12 px-0 row mx-0 justify-content-lg-between">
-                    <div class="col-lg-4">
+    <div class="container-fluid hero-section mt-5 pt-5 top_main_heading">
+        <div class="container inner_container h-md-100 mt-md-0 mt-5">
+            <div class="row h-md-100 align-items-center">
+                <div class="col-12 px-0 row mx-0 justify-content-lg-between align-items-center">
+                    <div class="col-lg-4 col-md-6">
                         <div class="swiper user_slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -38,26 +38,29 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="swiper user_slider1 h-150px">
+                    <div class="col-lg-7 col-md-6 mt-md-0 mt-4">
+                        <div class="swiper user_slider1 h-lg-150px h-md-100px h-70px">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <h2 class="fs-60"><span>I'm</span><br><span>A Designer</span></h2>
+                                    <h2 class="fs-lg-50 fs-md-40 fs-sm-30 fs-25"><span>I'm</span><br><span>A Designer</span></h2>
                                 </div>
-                                <div class="swiper-slide">
-                                    <h2 class="fs-60"><span>Noah</span><br><span>Henderson</span></h2>
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <h2 class="fs-lg-50 fs-md-40 fs-sm-30 fs-25 "><span>Ajay Saini</span></h2>
                                 </div>
                             </div>
                         </div>
                         <div class="content_side">
-                            <h6 class="inner position-relative d-inline-block">ABOUT</h6>
-                            <div class="main_content text-gray fs-16 fw-bold ps-5">
-                                A small river named Duden <a href="#">flows by their place</a> and supplies it with the
+                            <h6 class="inner position-relative d-inline-block fs-14">ABOUT</h6>
+                            <div class="main_content text-muted fs-14 fw-bold ps-sm-5 ps-4">
+                                A small river named Duden <a href="javascript:;" class="text-theme1">flows by their place</a> and supplies it with the
                                 necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
                                 fly
                                 into your mouth. Even the all-powerful Pointing has no control about the blind texts it
                                 is
                                 an almost unorthographic life.
+                            </div>
+                            <div class="ps-sm-5 mt-5 text-center">
+                                <a href="javascript:;" class="download_btn main_btn more_btn text-theme1">CONTECT ME</a>
                             </div>
                         </div>
                     </div>
@@ -65,6 +68,147 @@
             </div>
         </div>
     </div>
+    <!-- Hero Section End-->
+
+
+    <!-- Services Section Start-->
+    <!-- <div class="container-fluid hero-section mt-5 pt-5 top_main_heading services_heading">
+        <div class="container inner_container h-md-100 mt-md-0 mt-5">
+            <div class="row h-md-100 align-items-center">
+                <div class="col-12 px-0 row mx-0 justify-content-lg-between align-items-center">
+                    <div class="col-lg-7 col-md-6 mt-md-0 mt-4 order-md-1 order-2">
+                        <div class="swiper user_slider1 h-lg-150px h-md-100px h-70px">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h2 class="fs-lg-50 fs-md-40 fs-sm-30 fs-25"><span>I'm</span><br><span>A Designer</span></h2>
+                                </div>
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <h2 class="fs-lg-50 fs-md-40 fs-sm-30 fs-25 "><span>Ajay Saini</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_side">
+                            <h6 class="inner position-relative d-inline-block fs-14">Services</h6>
+                            <div class="main_content row mx-0 ps-5">
+                                <div class="col-auto">
+                                    <div class="card">
+                                        <div class="inner_card zi-1">
+                                        <div class="card-body px-4">
+                                            <div class="mb-3 fw-bold heading">1 - FRONT END DEVELOPMENT</div>
+                                            <ul class="fw-normal fs-14 m-0 text-muted">
+                                                <li>HTML / CSS</li>
+                                                <li>Bootstrap</li>
+                                                <li>SCSS</li>
+                                                <li>javascript</li>
+                                                <li>Responsive Web Application</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 order-md-2 order-1">
+                        <div class="swiper user_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/ser-2.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/ser-1.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/ser-2.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/index/ser-1.jpg" class="w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container-fluid hero-section mb-5 mt-5 pt-5 top_main_heading services_heading">
+        <div class="container inner_container h-md-100 mt-md-0 mt-5">
+            <div class="row h-md-100 align-items-center">
+                <div class="col-12 px-0 row mx-0 justify-content-lg-between align-items-center">
+                    <div class="col-auto">
+                        <div class="swiper user_slider1 h-lg-150px h-md-100px h-70px">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h2 class="fs-lg-50 fs-md-40 fs-sm-30 fs-25"><span>I'm</span><br><span>A Designer</span></h2>
+                                </div>
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <h2 class="fs-lg-50 fs-md-40 fs-sm-30 fs-25 "><span>Ajay Saini</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="content_side col-12">
+                            <h6 class="inner position-relative d-inline-block fs-14">Services</h6>
+                            <div class="main_content row mx-0 g-3 ps-sm-5 ps-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100">
+                                        <div class="inner_card zi-1">
+                                        <div class="card-body p-4">
+                                            <div class="mb-3 fw-bold heading text-uppercase">1 - FRONT END DEVELOPMENT</div>
+                                            <ul class="fw-normal fs-14 m-0 text-muted">
+                                                <li>HTML / CSS</li>
+                                                <li>Bootstrap</li>
+                                                <li>SCSS</li>
+                                                <li>javascript</li>
+                                                <li>Responsive Web Application</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100">
+                                        <div class="inner_card zi-1">
+                                        <div class="card-body p-4">
+                                            <div class="mb-3 fw-bold heading text-uppercase">2 - Education History</div>
+                                            <ul class="fw-normal fs-14 m-0 text-muted">
+                                                <li>School of Design</li>
+                                                <li>10th In 2015</li>
+                                                <li>12th PCM In 2017</li>
+                                                <li>BCA In CS 2020</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card h-100">
+                                        <div class="inner_card zi-1">
+                                        <div class="card-body p-4">
+                                            <div class="mb-3 fw-bold heading text-uppercase">3 - Work Experiences</div>
+                                            <ul class="fw-normal fs-14 m-0 text-muted">
+                                                <li>HTML5 / CSS3 Of (18 Month's)</li>
+                                                <li>Bootstrap (12 Month's)</li>
+                                                <li>SCSS (12 Month's)</li>
+                                                <li>Responsive Web Application (12 Month's)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Services Section End-->
 
 </body>
 
@@ -76,37 +220,4 @@
 <script src="assets/libs/include/jquery-3.6.0.min.js"></script>
 <script src="assets/libs/include/include-html.min.js"></script>
 <script src="assets/libs/swiper-slider/swiper-bundle.min.js"></script>
-
-
-<script>
-    var swiper = new Swiper(".user_slider", {
-        grabCursor: true,
-        effect: "creative",
-        mousewheel: true,
-        loop: true,
-        creativeEffect: {
-            prev: {
-                shadow: true,
-                translate: [0, 0, -400],
-            },
-            next: {
-                translate: ["100%", 0, 0],
-            },
-        },
-    });
-    var swiper = new Swiper(".user_slider1", {
-        // grabCursor: true,
-        // effect: "creative",
-        mousewheel: true,
-        loop: true,
-        creativeEffect: {
-            prev: {
-                shadow: true,
-                translate: [0, 0, -400],
-            },
-            next: {
-                translate: ["100%", 0, 0],
-            },
-        },
-    });
-</script>
+<script src="assets/js/app.min.js"></script>
