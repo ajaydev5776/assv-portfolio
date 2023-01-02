@@ -55,13 +55,23 @@ body{
 
 }
 
-#prelodaer {
+
+
+.page-loader {
   width: 100%;
   height: 100vh;
   position: fixed;
-  background: #fff url(../../img/index/Eclipse-1s-200px.gif);
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 99999;
+  background-color: #fff;
   inset: 0;
+  & .spinner {
+    min-width: 300px;
+    min-height: 300px;
+    background: #fff url(../../img/index/Eclipse-1s-200px.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

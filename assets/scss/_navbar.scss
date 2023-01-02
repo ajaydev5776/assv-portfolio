@@ -1,37 +1,34 @@
-.offcanvas {
-    width: 300px;
-    & .offcanvas-header {
-        & .offcanvas-title {
-            letter-spacing: 0.1rem;
+.icone_list {
+    cursor: pointer;
+}
+.tag_title {
+    letter-spacing: 0.1rem;
+}
+
+.tag_list {
+    & li {
+        transition: all 0.3s;
+        & a {
+            transition: all 0.3s;
+            position: relative;
+            &::before {
+                content: "";
+                opacity: 0;
+                left: -20px;
+                top: 10px;
+                width: 15px;
+                height: 1px;
+                background-color: #000;
+                position: absolute;
+                transition: all 0.4s;
+            }
         }
-    }
-    & .offcanvas-body {
-        & ul {
-            & li {
-                transition: all 0.3s;
-                & a {
-                    transition: all 0.3s;
-                    position: relative;
-                    &::before {
-                        content: "";
-                        opacity: 0;
-                        left: -20px;
-                        top: 10px;
-                        width: 15px;
-                        height: 1px;
-                        background-color: #000;
-                        position: absolute;
-                    transition: all 0.4s;
-                    }
+        &:hover {
+            & a {
+                &::before {
+                    opacity: 1;
                 }
-                &:hover {
-                    & a {
-                        &::before {
-                            opacity: 1;
-                        }
-                        letter-spacing: 0.3rem !important;
-                    }
-                }
+                letter-spacing: 0.3rem !important;
             }
         }
     }

@@ -77,11 +77,15 @@ $(document).ready(function () {
 
 // preloder
 
-let loading = document.getElementById("prelodaer");
-function myfunction(){
-    loading.style.display = "none";
-}
-
+// let loading = document.getElementById("prelodaer");
+// function myfunction(){
+//     loading.style.display = "none";
+// }
+$(window).on('load',function(){
+	setTimeout(function(){ // allowing 3 secs to fade out loader
+	$('.page-loader').fadeOut('slow');
+	},3500);
+});
 
 
 
