@@ -41,40 +41,45 @@
 //         }
 //     }
 // }
-.headings {
+// .headings {
+//     display: grid;
+//     place-items: center;
+//     & span {
+//         font-family: Arial, Helvetica, sans-serif;
+//         color: #fff;
+//         -webkit-text-stroke: 1px $theme1;
+//         letter-spacing: 8px;
+//         &::before {
+//             content: "Services";
+//             width: 100%;
+//             color: $theme1;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             border-right: 5px solid $theme1;
+//             animation: 5s slide linear infinite;
+//             overflow: hidden;
+//         }
+//         &.Portfolio {
+//             &::before {
+//                 content: "Portfolio";
+//             }
+//         }
+//     }
+//     @keyframes slide {
+//         0% {
+//             width: 0;
+//         }
+//         50% {
+//             width: 100%;
+//         }
+//         100% {
+//             width: 0;
+//         }
+//     }
+// }
+.typewrite {
     display: grid;
     place-items: center;
-    & span {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #fff;
-        -webkit-text-stroke: 1px $theme1;
-        letter-spacing: 8px;
-        &::before {
-            content: "Services";
-            width: 100%;
-            color: $theme1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-right: 5px solid $theme1;
-            animation: 5s slide linear infinite;
-            overflow: hidden;
-        }
-        &.Portfolio {
-            &::before {
-                content: "Portfolio";
-            }
-        }
-    }
-    @keyframes slide {
-        0% {
-            width: 0;
-        }
-        50% {
-            width: 100%;
-        }
-        100% {
-            width: 0;
-        }
-    }
+    font-family: Arial, Helvetica, sans-serif;
 }
