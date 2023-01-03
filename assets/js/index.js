@@ -41,5 +41,3 @@
 //     navText: ["<i class='imgs img-chevron-left'></i>", "<i class='imgs img-chevron-right'></i>"]
 // });
 
-
- 

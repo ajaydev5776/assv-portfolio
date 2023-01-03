@@ -1,4 +1,19 @@
 // Active navbar on scroll
+$(window).on('load', function () {
+    setTimeout(function () { // allowing 3 secs to fade out loader
+        $('.page-loader').fadeOut('slow');
+    },1000);
+});
+
+// Preloader
+// $(window).on('load', function () {
+//     if ($('#preloader').length) {
+//         $('#preloader').delay(1000).fadeOut('slow', function () {
+//             $(this).remove();
+//         });
+//     }
+// });
+
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll <= 80) {
@@ -81,47 +96,38 @@ $(document).ready(function () {
 // function myfunction(){
 //     loading.style.display = "none";
 // }
-$(window).on('load',function(){
-	setTimeout(function(){ // allowing 3 secs to fade out loader
-	$('.page-loader').fadeOut('slow');
-	},3500);
-});
+
+
+// $(window).on('load', function () {
+//     setTimeout(function () { // allowing 3 secs to fade out loader
+//         $('.page-loader').fadeOut('slow');
+//     }, 3500);
+// });
 
 
 
-var swiper = new Swiper(".user_slider", {
-    grabCursor: true,
-    effect: "creative",
-    mousewheel: true,
-    loop: true,
-    creativeEffect: {
-        prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-        },
-        next: {
-            translate: ["100%", 0, 0],
-        },
-    },
-});
-var swiper = new Swiper(".user_slider1", {
-    // grabCursor: true,
-    // effect: "creative",
-    mousewheel: true,
-    loop: true,
-    creativeEffect: {
-        prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-        },
-        next: {
-            translate: ["100%", 0, 0],
-        },
-    },
-});
+
+// let body = document.getElementsByTagName("body").addEventListener("loading");
+// let loading = document.getElementById("loading");
+
+// function load(){
+//     if (body.addEventListener = "loading"){
+//         loading.style.display = "none";
+//         body.style.display = "block";
+//     }else{
+//         loading.style.display = "block";
+//         body.style.display = "none";
+//     }
+//     }
+// window.onload = load()
+
+
+
+
+
 
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-return new bootstrap.Tooltip(tooltipTriggerEl)
+    return new bootstrap.Tooltip(tooltipTriggerEl)
 })

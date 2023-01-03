@@ -57,13 +57,13 @@
           transition: all 0.4s;
           &::before {
             content: "";
-            background-image: url(../../img/index/18410.jpg);
+            background-image: url(../../img/index/card_bg.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
             inset: 0;
-            filter: blur(3px);
+            // filter: blur(3px);
           }
           & .card-body {
             & .heading {
