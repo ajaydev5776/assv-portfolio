@@ -2,6 +2,7 @@
 <div include-html="layout/header.html" id="header_file"></div>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +17,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <div class="main">
-    
+    <div class="container-fluid contact_us_page top_section mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 fs-sm-16 fs-14 text-white home_heading">
+                    <a href="index.html" class="text-white text-decoration-none">Home</a> <span>| Contact Us</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 contact_form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                    <div class="card border-0 p-3 h-100">
+                        <form class="row mx-0 g-3 needs-validation" novalidate>
+                            <div class="col-sm-6">
+                                <label for="validationCustom01" class="form-label fs-14 text-black">Your Name</label>
+                                <input type="text" class="form-control shadow-none fs-14" id="validationCustom01"  required>
+                                <div class="invalid-feedback">Your First Name</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="validationCustom02" class="form-label fs-14 text-black">Last Name</label>
+                                <input type="text" class="form-control shadow-none fs-14" id="validationCustom02" required>
+                                <div class="invalid-feedback">Your Last Name</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="validationCustom03" class="form-label fs-14 text-black">City</label>
+                                <input type="text" class="form-control shadow-none fs-14" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="validationCustom04" class="form-label fs-14 text-black">State</label>
+                                <select class="form-select shadow-none fs-14" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="validationCustom05" class="form-label fs-14 text-black">Your Email</label>
+                                <input type="email" class="form-control shadow-none fs-14" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="validationCustom05" class="form-label fs-14 text-black">Your Number</label>
+                                <input type="tel" class="form-control shadow-none fs-14" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid number.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none fs-14" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button class="download_btn main_btn more_btn text-theme1" type="submit">Submit form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <img src="assets/img/contact_us/contact_us.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -34,38 +118,39 @@
 <script src="assets/js/app.min.js"></script>
 <script src="assets/libs/swiper-slider/swiper-bundle.min.js"></script>
 <script>
-    
-var swiper = new Swiper(".user_slider", {
-    grabCursor: true,
-    effect: "creative",
-    mousewheel: true,
-    loop: true,
-    creativeEffect: {
-        prev: {
-            shadow: true,
-            translate: [0, 0, -400],
+
+    var swiper = new Swiper(".user_slider", {
+        grabCursor: true,
+        effect: "creative",
+        mousewheel: true,
+        loop: true,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
         },
-        next: {
-            translate: ["100%", 0, 0],
+    });
+    var swiper = new Swiper(".user_slider1", {
+        // grabCursor: true,
+        // effect: "creative",
+        mousewheel: true,
+        loop: true,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
         },
-    },
-});
-var swiper = new Swiper(".user_slider1", {
-    // grabCursor: true,
-    // effect: "creative",
-    mousewheel: true,
-    loop: true,
-    creativeEffect: {
-        prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-        },
-        next: {
-            translate: ["100%", 0, 0],
-        },
-    },
-});
+    });
 
 </script>
 </body>
+
 </html>

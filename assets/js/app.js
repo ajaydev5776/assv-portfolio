@@ -2,7 +2,7 @@
 $(window).on('load', function () {
     setTimeout(function () { // allowing 3 secs to fade out loader
         $('.page-loader').fadeOut('slow');
-    },1000);
+    }, 1000);
 });
 
 // Preloader
@@ -127,7 +127,5 @@ $(document).ready(function () {
 
 
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+
+
