@@ -76,14 +76,11 @@ body{
   }
 }
 
-// top_section
-.top_section {
-  padding: 200px 0px;
-}
+
 // contact_us_page  
 .contact_us_page {
-  background: linear-gradient(45deg, rgb($black, 0.4) 50%, rgb($black, 0.1) 100%), url(../../img/contact_us/contact_us2.jpg);
-  background-position: center;
+  background:  url(../../img/contact_us/banner-bg.webp);
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   & .home_heading {
@@ -117,9 +114,9 @@ body{
     background-color: $gray-100;
     & .card-body {
       font-family: Arial, Helvetica, sans-serif;
-      & .inner_body {
-      }
     }
-    transition: all .4s;
+    &::before {
+      
+    }
   }
 }

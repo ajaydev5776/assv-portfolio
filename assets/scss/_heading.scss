@@ -24,6 +24,17 @@
             }
         }
     }
+    // top_section
+    .top_section {
+        padding-top: 180px !important;
+        padding-bottom: 170px !important;
+    }
+}
+
+// top_section
+.top_section {
+    padding-top: 140px;
+    padding-bottom: 130px;
 }
 
 // .headings {
@@ -82,5 +93,18 @@
     font-family: Arial, Helvetica, sans-serif;
     &.headingS {
         letter-spacing: 8px;
+    }
+}
+
+.other_page_heading {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 50%;
+        height: 2px;
+        background-color: $theme1;
     }
 }

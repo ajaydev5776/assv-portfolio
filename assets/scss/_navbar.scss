@@ -1,6 +1,6 @@
 .icone_list {
     cursor: pointer;
-    filter: invert(1);
+    // filter: invert(1);
 
 }
 .tag_title {
@@ -44,16 +44,6 @@
     background: #f0f0f0 !important;
     transition: all 1s !important;
     transition: all 0.3s ease-in-out;
-    & .navbar-brand{
-    background-color: #000 !important;
-    color: white !important;
-
-    }
-    & .icone_list {
-        cursor: pointer;
-        filter: invert(0) !important;
-    
-    }
 }
 
 .always-nav-active {
@@ -61,6 +51,16 @@
     background: #f0f0f0 !important;
     transition: all 0.3s ease-in-out;
 
+    & .navbar-brand{
+        background-color: $white !important;
+        color: $black !important;
+    
+        }
+        // & .icone_list {
+        //     cursor: pointer;
+        //     filter: invert(1) !important;
+        
+        // }
 }
 
 
